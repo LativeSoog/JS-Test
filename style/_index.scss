@@ -25,6 +25,10 @@
         color: #FFFFFF;
         max-width: 481px;
         padding-top: 32px;
+
+        &_bold {
+            font-weight: 700;
+        }
     }
 
     &__button {
@@ -47,15 +51,46 @@
 }
 
 .game {
-    &__item1 {
+    background-color: #000915;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 32px;
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        width: 379px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .item1 {
         background-image: url(../img/game1.png);
     }
 
-    &__item2 {
+    .item2 {
         background-image: url(../img/game2.png);
     }
 
-    &__item3 {
+    .item3 {
         background-image: url(../img/game3.png);
     }
 }

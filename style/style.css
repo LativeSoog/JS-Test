@@ -8,8 +8,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
   max-width: 1440px;
 }
 
@@ -39,6 +39,9 @@ body {
   max-width: 481px;
   padding-top: 32px;
 }
+.header__text_bold {
+  font-weight: 700;
+}
 .header__button {
   margin-top: 44px;
   width: 234px;
@@ -57,12 +60,42 @@ body {
   outline: none;
 }
 
-.game__item1 {
+.game {
+  background-color: #000915;
+}
+.game__content {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.game__item {
+  display: flex;
+  align-items: flex-end;
+  width: 379px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  transition: transform 0.5s;
+}
+.game__item:hover {
+  transform: scale(1.05);
+}
+.game .item1 {
   background-image: url(../img/game1.png);
 }
-.game__item2 {
+.game .item2 {
   background-image: url(../img/game2.png);
 }
-.game__item3 {
+.game .item3 {
   background-image: url(../img/game3.png);
 }/*# sourceMappingURL=style.css.map */
