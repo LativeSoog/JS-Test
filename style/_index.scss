@@ -1,0 +1,96 @@
+.header {
+    background-image: url(../img/background_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1024px;
+
+    &__content {
+        padding-top: 217px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #FFFFFF;
+        max-width: 780px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        max-width: 481px;
+        padding-top: 32px;
+
+        &_bold {
+            font-weight: 700;
+        }
+    }
+
+    &__button {
+        margin-top: 44px;
+        width: 234px;
+        height: 48px;
+        font-family: inherit;
+        background: #9C0332;
+        border-radius: 30px;
+        border: none;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        align-items: center;
+        color: #FFFFFF;
+        outline: none;
+    }
+}
+
+.game {
+    background-color: #000915;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 32px;
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        width: 379px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .item1 {
+        background-image: url(../img/game1.png);
+    }
+
+    .item2 {
+        background-image: url(../img/game2.png);
+    }
+
+    .item3 {
+        background-image: url(../img/game3.png);
+    }
+}
