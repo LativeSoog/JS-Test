@@ -5,12 +5,12 @@ a = 20;
 alert(a);
 
 //Задача 2
-let yearOneIphone = 2007
-alert(yearOneIphone);
+let yearFirstIphone = 2007
+alert(yearFirstIphone);
 
 //Задача 3
-let nameDevJs = 'Брендан Айком';
-alert(nameDevJs);
+let nameCreatorJs = 'Брендан Айком';
+alert(nameCreatorJs);
 
 //Задача 4
 let b = 10;
