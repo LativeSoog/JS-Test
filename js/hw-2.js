@@ -1,6 +1,7 @@
-/*
 //Задача 1
-let a = 20;
+let a = 10;
+alert(a);
+a = 20;
 alert(a);
 
 //Задача 2
@@ -24,12 +25,10 @@ let d = 2;
 let result = (d ** 5);
 alert(result);
 
-*/
-
 //Задача 6
 let e = 9;
 let f = 2;
-let resultDivision = e % f;
+let resultDivision = (e % f);
 alert(resultDivision);
 
 //Задача 7
@@ -47,6 +46,16 @@ let age = String(prompt(`Сколько вам лет?`));
 alert(`Вам ${age} лет`);
 
 //Задача 9
+let user = {
+    name: String("Vitaliy"),
+    age: Number(20),
+    isAdmin: Boolean(1),
+};
+user["city of residence"] = "Astana";
+user["age"] = 24;
+delete user["city of residence"];
+let info = String(prompt(`Какую информацию хотите узнать о пользователе?`));
+alert(user[info]);
 
 //Задача 10
 let nameUser = String(prompt(`Укажите ваше имя`));
