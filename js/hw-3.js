@@ -113,6 +113,7 @@ else if (clientOS === 1) {
 
 //ДОП. Задание 9
 let appClientOS;
+let clientDeviceYear;
 
 if (navigator.userAgentData.platform == "iOS") {
     appClientOS = 0
@@ -121,7 +122,7 @@ else if (navigator.userAgentData.platform == "Android") {
     appClientOS = 1
 };
 
-let clientDeviceYear = Number(prompt(`Укажите год выпуска вашего телефона`));
+(appClientOS === 0 || appClientOS === 1) ? clientDeviceYear = Number(prompt(`Укажите год выпуска вашего телефона`)) : ("");
 
 if (clientDeviceYear > 2014 && appClientOS === 0) {
     console.log(`Установите версию приложения для iOS по ссылке`)
