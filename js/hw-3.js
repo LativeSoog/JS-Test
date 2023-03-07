@@ -1,4 +1,3 @@
-/*
 //Задание 1
 let password = `krutoyparol`;
 let userPassword = String(prompt(`Введите пароль`));
@@ -75,9 +74,71 @@ switch (monthNumber) {
         alert(`Такого месяца не существует`)
         break;
 }
-*/
+
 
 //ДОП. Задание 7
 let userNumber = Number(prompt(`Пожалуйста, введите любое число`));
 
-alert(isNaN(userNumber));
+console.log(isNaN(userNumber));
+
+let numberEven = (userNumber % 2);
+
+if (numberEven === 0) {
+    alert(`Число чётное`)
+}
+else {
+    alert(`Число нечётное`)
+};
+
+
+//ДОП. Задание 8
+let clientOS;
+
+if (navigator.userAgentData.platform == "iOS") {
+    clientOS = 0
+}
+else if (navigator.userAgentData.platform == "Android") {
+    clientOS = 1
+};
+
+if (clientOS === 0) {
+    console.log(`Установите версию приложения для iOS по ссылке`)
+    alert(`Установите версию приложения для iOS по ссылке`)
+}
+else if (clientOS === 1) {
+    console.log(`Установите версию приложения для Android по ссылке`);
+    alert(`Установите версию приложения для Android по ссылке`)
+}
+
+
+//ДОП. Задание 9
+let appClientOS;
+
+if (navigator.userAgentData.platform == "iOS") {
+    appClientOS = 0
+}
+else if (navigator.userAgentData.platform == "Android") {
+    appClientOS = 1
+};
+
+let clientDeviceYear = Number(prompt(`Укажите год выпуска вашего телефона`));
+
+if (clientDeviceYear > 2014 && appClientOS === 0) {
+    console.log(`Установите версию приложения для iOS по ссылке`)
+    alert(`Установите версию приложения для iOS по ссылке`)
+}
+
+else if (clientDeviceYear < 2015 && appClientOS === 0) {
+    console.log(`Установите облегченную версию приложения для iOS по ссылке`)
+    alert(`Установите облегченную версию приложения для iOS по ссылке`)
+}
+
+else if (clientDeviceYear > 2014 && appClientOS === 1) {
+    console.log(`Установите версию приложения для Android по ссылке`)
+    alert(`Установите версию приложения для Android по ссылке`)
+}
+
+else if (clientDeviceYear < 2015 && appClientOS === 1) {
+    console.log(`Установите облегченную версию приложения для Android по ссылке`)
+    alert(`Установите облегченную версию приложения для Android по ссылке`)
+};
