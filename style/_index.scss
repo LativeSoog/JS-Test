@@ -64,8 +64,8 @@
     &__item {
         display: flex;
         align-items: flex-end;
-        width: 379px;
-        height: 300px;
+        width: 346px;
+        height: 268px;
         background-repeat: no-repeat;
         background-size: cover;
         font-style: normal;
@@ -93,4 +93,60 @@
     .item3 {
         background-image: url(../img/game3.png);
     }
+}
+
+.game-one {
+    background-color: #000915;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 234px 0px 234px 0px;
+    }
+}
+
+.info {
+    &__content {
+        padding-top: 48px;
+    }
+
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding: 32px 0px 32px 0px;
+    }
+
+    &__button {
+        width: 234px;
+        height: 48px;
+        font-family: inherit;
+        background: #9C0332;
+        border-radius: 30px;
+        border: none;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        align-items: center;
+        color: #FFFFFF;
+        outline: none;
+    }
+}
+
+.image__content {
+    display: flex;
+    justify-content: flex-end;
 }
