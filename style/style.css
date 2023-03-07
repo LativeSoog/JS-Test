@@ -10,7 +10,6 @@ body {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
-  max-width: 1440px;
 }
 
 .header {
@@ -98,4 +97,11 @@ body {
 }
 .game .item3 {
   background-image: url(../img/game3.png);
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
