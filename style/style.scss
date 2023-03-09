@@ -10,7 +10,8 @@ body {
 .center {
     padding-left: calc(50% - 1200px/2);
     padding-right: calc(50% - 1200px/2);
-    max-width: 1440px;
 }
 
-@import 'index'
+@import 'index';
+@import 'tablet';
+@import 'mobile';

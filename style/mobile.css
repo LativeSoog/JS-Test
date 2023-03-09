@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 162px;
+  }
+  .header {
+    background-image: url(../img/mobile/background_header_mobile.jpg);
+    height: 735px;
+  }
+}/*# sourceMappingURL=mobile.css.map */
