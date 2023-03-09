@@ -2,7 +2,7 @@
 let password = `krutoyparol`;
 let userPassword = String(prompt(`Введите пароль`));
 
-(password === userPassword) ? alert(`Пароль введен верно`) : alert(`Пароль введен неправильно`);
+alert(password === userPassword ? `Пароль введен верно` : `Пароль введен неправильно`)
 
 //Задание 2
 let c = 70;
@@ -43,7 +43,7 @@ let b = Number('3');
 alert(a + b);
 
 //Задание 5
-let monthNumber = String(prompt(`Введите номер месяца`));
+let monthNumber = prompt(`Введите номер месяца`);
 
 switch (monthNumber) {
     case `1`:
@@ -123,6 +123,7 @@ else if (navigator.userAgentData.platform == "Android") {
 };
 
 (appClientOS === 0 || appClientOS === 1) ? clientDeviceYear = Number(prompt(`Укажите год выпуска вашего телефона`)) : ("");
+
 
 if (clientDeviceYear > 2014 && appClientOS === 0) {
     console.log(`Установите версию приложения для iOS по ссылке`)
