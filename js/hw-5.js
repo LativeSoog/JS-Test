@@ -11,7 +11,6 @@ function number(a, b) {
         return (`Указано некорректное значение`);
     }
 }
-
 console.log(number());
 
 //Задание 2
@@ -32,7 +31,6 @@ function squareNumberOne(a) {
     a = Number(prompt(`Введите любое число`));
     console.log(a ** 2);
 }
-
 squareNumberOne();
 
 
@@ -57,7 +55,6 @@ let age = () => {
         alert(`Добро пожаловать!`)
     }
 }
-
 age();
 
 // Задание 5
@@ -82,7 +79,6 @@ let cubeNumber = (userNumber, checkNumber) => {
     return checkNumber ? alert(`Переданный параметр не является числом`) : alert(`${userNumber} в кубе равняется ${cubeNumber}`);
 
 }
-
 cubeNumber();
 
 //Задание 7
