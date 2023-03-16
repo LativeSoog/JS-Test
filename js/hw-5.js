@@ -1,85 +1,89 @@
 // Задание 1
 
-function number(a, b) {
-    a = Number(prompt(`Введите 1-ое число`));
-    b = Number(prompt(`Введите 2-ое число`));
+function smallNumber(a, b) {
     if (a >= b) {
         return a;
-    } else if (a <= b) {
+    } else if (a <= a) {
         return b;
     } else {
         return (`Указано некорректное значение`);
     }
 }
-console.log(number());
 
-//Задание 2
+console.log(smallNumber(Number(prompt(`Введите 1-ое число`)), Number(prompt(`Введите 2-ое число`))));
 
-let evenNumber = () => {
-    evenNumber = Number(prompt(`Введите любое число`)) % 2;
-    if (evenNumber === 0) {
+
+// //Задание 2
+
+let evenNumber = (a) => {
+    if (a === 0) {
         return (`Число чётное`);
-    } else if (evenNumber === 1) {
-        return (`Число нечётное`);
+    } else if (a === 1) {
+        return (`Число нечётное`)
+    } else {
+        return (`Указано некорректное значение`)
     }
 }
-console.log(evenNumber());
+
+console.log(evenNumber(Number(prompt(`Введите любое число`)) % 2));
 
 //Задание 3.1
 
 function squareNumberOne(a) {
-    a = Number(prompt(`Введите любое число`));
-    console.log(a ** 2);
+    return a;
 }
-squareNumberOne();
 
+console.log(squareNumberOne(Number(prompt(`Введите любое число`)) ** 2));
 
 //Задание 3.2
 function squareNumberTwo(a) {
-    a = Number(prompt(`Введите любое число`));
     return a ** 2;
 }
-squareNumberTwo();
+
+console.log(squareNumberTwo(Number(prompt(`Введите любое число`))));
 
 // Задание 4
 
-let age = () => {
-    age = Number(prompt(`Укажите ваш возраст`));
-    if (age < 0) {
-        alert(`Вы ввели неправильное значение`);
-
-    } else if (age <= 12) {
-        alert(`Привет, друг!`)
-
-    } else if (age >= 13) {
-        alert(`Добро пожаловать!`)
+let age = (userAge) => {
+    if (userAge < 0) {
+        return (`Вы ввели неправильное значение`)
+    } else if (userAge <= 12) {
+        return (`Привет, друг!`)
+    } else if (userAge >= 13) {
+        return (`Добро пожаловать!`)
     }
 }
-age();
+
+console.log(age(Number(prompt(`Введите ваш возраст`))));
+
 
 // Задание 5
 
 let numberAddition = (a, b) => {
-    a = Number(prompt(`Введите 1-ое число`))
-    b = Number(prompt(`Введите 2-ое число`))
-
-    numberAddition = (isNaN(a + b));
-
-    numberAddition ? alert(`Одно или оба значения не являются числом`) : alert(a + b);
-
+    let checkNumber = (isNaN(a + b));
+    if (checkNumber === true) {
+        return (`Одно или оба значения не являются числом`)
+    } else {
+        return (a + b)
+    }
 }
-numberAddition();
+
+console.log(numberAddition(Number(prompt(`Введите 1-ое значение`)), Number(prompt(`Введите 2-ое значение`))));
+
 
 //Задание 6
 
-let cubeNumber = (userNumber, checkNumber) => {
-    userNumber = Number(prompt(`Введите любое число`));
+function cubeNumber(userNumber, checkNumber) {
     checkNumber = (isNaN(userNumber));
-    cubeNumber = userNumber ** 3;
-    return checkNumber ? alert(`Переданный параметр не является числом`) : alert(`${userNumber} в кубе равняется ${cubeNumber}`);
 
+    if (checkNumber === true) {
+        return (`Переданный параметр не является числом`)
+    } else {
+        return (`${userNumber} в кубе равняется ${userNumber ** 3}`)
+    }
 }
-cubeNumber();
+
+console.log(cubeNumber(Number(prompt(`Введите любое число`))));
 
 //Задание 7
 
@@ -108,17 +112,16 @@ console.log(`Площадь второго круга ${circle2.getArea()}, пе
 
 //Задание 8
 
-function monthNumber() {
-    let monthNumber;
-    monthNumber = prompt(`Привет! Давай поиграем. Введи любой номер месяца`);
+function monthNumber(monthNumberClick) {
+    monthNumberUser = prompt(`Привет! Давай поиграем. Введи любой номер месяца`);
 
-    if (monthNumber >= 1 && monthNumber <= 2 || monthNumber == 12) {
+    if (monthNumberUser >= 1 && monthNumberUser <= 2 || monthNumberUser == 12) {
         return console.log(`Этот месяц относится к сезону "Зима"`);
-    } else if (monthNumber >= 3 && monthNumber <= 5) {
+    } else if (monthNumberUser >= 3 && monthNumberUser <= 5) {
         return console.log(`Этот месяц относится к сезону "Весна"`);
-    } else if (monthNumber >= 6 && monthNumber <= 8) {
+    } else if (monthNumberUser >= 6 && monthNumberUser <= 8) {
         return console.log(`Этот месяц относится к сезону "Лето"`);
-    } else if (monthNumber >= 9 && monthNumber <= 11) {
+    } else if (monthNumberUser >= 9 && monthNumberUser <= 11) {
         return console.log(`Этот месяц относится к сезону "Осень"`);
     } else {
         return console.log(`Такого месяца не существует. Попробуй ещё раз!`);
