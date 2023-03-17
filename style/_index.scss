@@ -47,6 +47,12 @@
         align-items: center;
         color: #FFFFFF;
         outline: none;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #EB443F;
+            cursor: pointer;
+        }
     }
 }
 
@@ -75,10 +81,12 @@
         color: #FFFFFF;
         padding-left: 32px;
         padding-bottom: 32px;
-        transition: transform 0.5s;
+        transition: border 0.3s;
 
         &:hover {
-            transform: scale(1.05);
+            border: 3px solid #44D2FF;
+            border-radius: 16px;
+            cursor: pointer;
         }
     }
 
@@ -143,6 +151,12 @@
         align-items: center;
         color: #FFFFFF;
         outline: none;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #EB443F;
+            cursor: pointer;
+        }
     }
 }
 

@@ -57,6 +57,11 @@ body {
   align-items: center;
   color: #FFFFFF;
   outline: none;
+  transition: background 0.3s;
+}
+.header__button:hover {
+  background: #EB443F;
+  cursor: pointer;
 }
 
 .game {
@@ -84,10 +89,12 @@ body {
   color: #FFFFFF;
   padding-left: 32px;
   padding-bottom: 32px;
-  transition: transform 0.5s;
+  transition: border 0.3s;
 }
 .game__item:hover {
-  transform: scale(1.05);
+  border: 3px solid #44D2FF;
+  border-radius: 16px;
+  cursor: pointer;
 }
 .game .item1 {
   background-image: url(../img/game1.png);
@@ -141,6 +148,11 @@ body {
   align-items: center;
   color: #FFFFFF;
   outline: none;
+  transition: background 0.3s;
+}
+.info__button:hover {
+  background: #EB443F;
+  cursor: pointer;
 }
 
 .image__content {
