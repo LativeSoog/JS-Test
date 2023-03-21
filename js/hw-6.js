@@ -4,7 +4,7 @@ const arrOne = [1, 5, 4, 10, 0, 3];
 
 for (let a = 0; a < arrOne.length; a++) {
     if (arrOne[a] === 10) break;
-
+    console.log(arrOne[a]);
 }
 
 //Задание 2
