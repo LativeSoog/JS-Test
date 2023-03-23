@@ -99,23 +99,25 @@ console.log(getDate(new Date()));
 
 //Задание 11
 
-alert(`Привет! Сейчас вам будут показан набор слов, постарайтесь их запомнить :)`)
+function gameWord() {
+    alert(`Привет! Сейчас вам будут показан набор слов, постарайтесь их запомнить :)`)
 
-let rememberWord = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
-rememberWord = rememberWord.sort(() => Math.random() - 0.5)
-alert(rememberWord);
+    let rememberWord = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    rememberWord = rememberWord.sort(() => Math.random() - 0.5)
+    alert(rememberWord);
 
-for (let a = 0; a < rememberWord.length; a++) {
-    rememberWord[a] = rememberWord[a].toLocaleLowerCase()
-}
+    for (let a = 0; a < rememberWord.length; a++) {
+        rememberWord[a] = rememberWord[a].toLocaleLowerCase()
+    }
 
-let oneWord = prompt(`Какое было первое слово?`).toLowerCase();
-let twoWord = prompt(`Какое было последнее слово?`).toLowerCase();
+    let oneWord = prompt(`Какое было первое слово?`).toLowerCase();
+    let twoWord = prompt(`Какое было последнее слово?`).toLowerCase();
 
-if (rememberWord[0] === oneWord && rememberWord[6] === twoWord) {
-    alert(`Поздравляем! Вы угадали оба слова!`)
-} else if (rememberWord[0] === oneWord || rememberWord[6] === twoWord) {
-    alert(`Вы были близки к победе`)
-} else {
-    alert(`Ваш ответ неверный :(`)
+    if (rememberWord[0] === oneWord && rememberWord[6] === twoWord) {
+        alert(`Поздравляем! Вы угадали оба слова!`)
+    } else if (rememberWord[0] === oneWord || rememberWord[6] === twoWord) {
+        alert(`Вы были близки к победе`)
+    } else {
+        alert(`Ваш ответ неверный :(`)
+    }
 }
