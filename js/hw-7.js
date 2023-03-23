@@ -5,7 +5,7 @@ string = string.toUpperCase();
 
 console.log(string);
 
-//Задание 2 - ДОДЕЛАТЬ!!!
+//Задание 2
 
 let functionLine = (arrLine, line) => {
     let result = [];
