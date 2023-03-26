@@ -67,6 +67,15 @@
         }
     }
 
+    .game-two {
+
+        &__content {
+            grid-template-columns: 1fr;
+            padding: 52px 0px 90px 0px;
+            row-gap: 64px;
+        }
+    }
+
     .info {
         &__content {
             display: flex;
@@ -91,6 +100,10 @@
     .image {
         &__content {
             justify-content: center;
+
+            &-left {
+                display: none;
+            }
         }
 
         &__game {
